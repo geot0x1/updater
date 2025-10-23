@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello Page</title>
+</head>
+<body>
+    <h1>Hello Page</h1>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Click Me</button>
+    </form>
+
+    <p>Button clicked {{ count }} times.</p>
+</body>
+</html>
