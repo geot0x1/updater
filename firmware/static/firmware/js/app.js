@@ -37,7 +37,7 @@ fileInput.addEventListener('change', async (e) => {
   fd.append('firmwareId', firmwareId);
 
   try {
-    const res = await fetch('/upload', {
+    const res = await fetch('/upload/', {
       method: 'POST',
       body: fd,
       headers: { 'X-CSRFToken': csrfToken }
